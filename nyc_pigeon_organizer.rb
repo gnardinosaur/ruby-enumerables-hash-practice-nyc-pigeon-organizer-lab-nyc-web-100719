@@ -3,11 +3,12 @@ def nyc_pigeon_organizer(data)
   data.each do |key1, second_hash| #key1 are symbols :color, :gender, and :lives 
     second_hash.each do |key2, arr| #key2 are descriptor words & arr are arrays of names 
       arr.each do |name|
-        if data[key1][key2].include?(name)
-          pigeon_list[name] = {
-            key1 => "#{key2}"
-          }
-        end
+        pigeon_list[name] = {
+          :color => [],
+          :gender => [],
+          :lives => []
+        }
+        pigeon_list = pigeon_list.merge!(pigeon_list)
       end
     end
   end
