@@ -7,11 +7,11 @@ def nyc_pigeon_organizer(data)
             pigeon_list[name][key1] << "#{key2}"
           else 
             pigeon_list[name] = { 
-              :color => [],
-              :gender => [],
-              :lives => []
+              :"#{key}" => ["#{key2}"],
+              #:gender => [],
+              #:lives => []
             }
-            pigeon_list[name][key1] << "#{key2}"
+            #pigeon_list[name][key1] << "#{key2}"
         end 
       end
     end
