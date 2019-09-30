@@ -11,7 +11,7 @@ def nyc_pigeon_organizer(data)
               #:gender => [],
               #:lives => []
             }
-            #pigeon_list[name][key1] << "#{key2}"
+            pigeon_list[name][key1] << "#{key2}"
         end 
         p pigeon_list
       end
