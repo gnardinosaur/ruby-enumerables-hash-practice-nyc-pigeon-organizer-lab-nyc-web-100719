@@ -13,6 +13,7 @@ def nyc_pigeon_organizer(data)
             }
             #pigeon_list[name][key1] << "#{key2}"
         end 
+        p pigeon_list
       end
     end
   end
